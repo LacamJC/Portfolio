@@ -1,0 +1,82 @@
+.logo
+{
+    width: 80%;
+}
+
+*
+{
+    scroll-behavior: smooth;
+}
+
+
+@media screen and (min-width:900px) {
+
+    /* Definindo que o conteudo da pagina tenha uma pequena margem quando tiver espaço sobrando  */
+    .main, nav 
+    {
+        width: 80%;
+        margin: auto;
+    }
+
+    .main
+    {
+        background-color:rgba(0, 0, 255, 0.082);
+   
+    }
+}
+
+@media screen and (max-width: 899px)
+{
+    
+    .main
+    {
+        background-color: red;
+    }
+}
+
+.list
+{
+    background-color: blue;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: auto;
+}
+
+.card
+{
+    background-color: white;
+    width: 6rem;
+    padding: 5px;
+    border-radius: 0px;
+    /* height: 200px; */
+    display: flex;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projeto 
+{
+    background-color: salmon;
+}
+
+.projeto h3
+{
+    text-align: center;
+}
+
+.apresentacao
+{
+    background-color: aqua;
+}
+
+.apresentacao img 
+{
+    width: 50%;
+    margin: auto    ;
+}
