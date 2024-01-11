@@ -344,10 +344,6 @@ h1
     /* bottom: 0px; */
 }
 
-.logos img 
-{
-    /* width: 50%; */
-}
 .paleta
 {
     /* background-color: red; */
@@ -407,6 +403,17 @@ h1
     align-items: center;
     flex-direction: column;
 }
+
+
+/* Sobre Mim  */
+.sobreMim
+{
+    /* background-color: red; */
+    width: 100%;
+    min-height: 300px;
+}
+
+
 @media screen and (min-width:1401px)
 {
         .main__sublist--hidden
