@@ -9,6 +9,8 @@ html
     scroll-behavior: smooth;
 }
 
+
+
 .italic
 {
     font-style: italic;
@@ -44,14 +46,14 @@ html
     border: 1px solid black;
     position: fixed;
     /* display: none; */
-    transform: translateX(-100px);
+    /* transform: translateX(-100px); */
     transition: all 0.5s ease;
 }
 
 .visible
 {
     display: block;
-    transform: translateX(40px);
+    /* transform: translateX(40px); */
 }
 
 
@@ -230,13 +232,7 @@ html
     /* border: 2px solid black; */
 }
 
-.col__divid
-{
-    width: 50%;
-    height: 100%;
 
-    padding-top: 10px;
-}
 
 .col__divid h5 
 {
@@ -606,3 +602,70 @@ html
 } */
 
 /* FUNCIONA */
+.elementProject
+{
+    color: white;
+    padding: 5px;
+    border: 2px solid white;
+    font-weight: bold;
+    font-size: 1em;
+    height: auto;
+
+    animation: element 10s infinite;
+}
+
+.elementProject a 
+{
+    text-decoration: none;
+    color: white;
+}
+
+.elementProject:hover 
+{
+    pointer-events: fill;
+}
+
+
+.elementPMG
+{
+    animation: element 9s infinite;
+}
+
+.elementNPR
+{
+    animation: element 8s infinite;
+}
+
+.elementVL
+{
+    animation: element 7s infinite;
+}
+.control
+{
+    /* background-color: rgba(255, 0, 0, 0.3+08); */
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@keyframes element{
+    0%
+    {
+        transform: translateX(200px) translateY(10px) scale(1);
+        transition: all 10s linear;
+    }
+
+    50%
+    {
+        transform: translateX(-400px) translateY(-20px) scale(1.3);
+        transition: all 10s linear;
+    }
+
+    100%
+    {
+        transform: translate(+200px) translateY(10px) scale(1);
+        transition: all 10s linear;
+    }
+}
