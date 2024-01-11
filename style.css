@@ -145,11 +145,37 @@
     width: 100%;
 }
 
+
+
+@media screen and (min-width:1401px)
+{
+        .main__sublist--hidden
+    {
+        display: none;
+    }
+    .main__title--hidden 
+    {
+        display: none;
+    }
+}
+
 @media screen and (max-width:1400px) /*Quando for uma tela menor*/
 {
+    .apresentacao
+    {
+        justify-content: start;
+    }
     .main__group 
     {
-        background-color: rgba(255, 0, 0, 0.13);
+        /* background-color: rgba(255, 0, 0, 0.13); */
+        width: 100%;
+
+        
+    }
+
+    .main__sub 
+    {
+        width: 100%;
     }
 
     .main__title
@@ -158,11 +184,42 @@
         display: none;
     }
 
+
+    .main__sublist 
+    {
+        display: none;
+    }
+
     .main__title--hidden
     {
         font-size: 3em;
         text-align: center;
+        font-weight: bold;
 
+    }
+
+    .main__sublist--hidden 
+    {
+
+        list-style: none;
+        /* background-color: rgba(0, 0, 255, 0.185); */
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 65%;
+
+        margin: auto;
+    }
+
+    .main__sublist--link 
+
+    {
+        font-size: 15px;
+        /* background-color: red; */
+        padding: 5px 10px;
+        margin: 5px 15px;
     }
 
 
@@ -170,6 +227,40 @@
     {
         display: none;
 
+    }
+}
+
+@media screen and (max-width:500px)
+{
+    
+    .apresentacao 
+    {
+        /* background-color: blue; */
+        margin: auto;
+        width: 100%;
+    }
+    .main__group
+    {
+        /* background-color: red; */
+        width: 100%;
+        padding: 0px;
+    }
+
+    .main__title--hidden
+    {
+        font-size: 2.5em;
+    }
+
+    .main__sublist--hidden
+    {
+        /* background-color: red; */
+        width: 100%;
+    }
+
+    .main__sublist--link 
+    {
+        font-weight: bold;
+        font-size: 0.8em;
     }
 }
 
