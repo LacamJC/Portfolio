@@ -317,6 +317,7 @@ html
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid black;
 }
 
 .corInfo
@@ -339,6 +340,7 @@ html
     visibility: initial;
     background-color: rgba(0, 0, 0, 0.13);
     color: white;
+
     cursor: default;
 }
 
@@ -463,6 +465,10 @@ html
 
 @media screen and (max-width:500px)
 {
+    h4
+    {
+        text-align: center;
+    }
     .visible 
     {
         display: block;
@@ -502,6 +508,22 @@ html
         font-weight: bold;
         font-size: 0.7em;
         /* background-color: red; */
+    }
+    
+    .ALL__main__sublist
+    {
+        /* background-color: red; */
+        /* display: flex; */
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+    }
+    .ALL__main__sublist--link
+    {
+        text-align: center;
+        font-size: 0.9em;
+        /* background-color: red; */
+        text-wrap: wrap;
     }
 
     .main__listItem 
