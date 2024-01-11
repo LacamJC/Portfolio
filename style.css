@@ -276,7 +276,7 @@
 
 
 
-@keyframes lineEternal{
+/* @keyframes lineEternal{
     0%
     {
         width: 0px;
@@ -294,8 +294,26 @@
         width: 0px;
         border: 2px solid rgb(230, 230, 230);
     }
-}
+} */
 
+@keyframes lineEternal {
+    0% {
+      width: 0px;
+      border: 2px solid transparent;
+      /* height: 0px; */
+    }
+    50% {
+      width: 50%;
+      border: 2px solid black;
+      /* height: 10px; */
+    }
+
+    100% {
+      width: 100%;
+      border: 2px solid transparent;
+      /* height: 0px; */
+    }
+  }
 /* @keyframes move{
     0%
     {
