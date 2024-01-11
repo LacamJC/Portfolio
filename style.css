@@ -50,12 +50,25 @@ html
     visibility: hidden;
     transform: translateX(-100px);
     transition: all 0.5s ease;
+    opacity: 0.5;
+    background-color: r;
+}
+
+.arrow:hover 
+{
+    opacity: 1;
+    background-color: black;
+    color: white;
+    /* border: 1px solid white; */
+    
 }
 
 .visible
 {
     /* display: block; */
-    transform: translateX(100px);
+    transform: translateX(100px) translateY(-50px);
+    
+    
 }
 
 
@@ -76,6 +89,7 @@ html
 .apresentacao:hover .arrow
 {
     display: none;
+    /* opacity: 1; */
 }
 
 .main__title
