@@ -128,7 +128,7 @@
 
 .main__listItem:hover 
 {
-    transform: translateX(5px) translateY(5px);
+    transform: translateX(5px) translateY(5px) scale(1.1);
     
     /* transition: all 0.5s ease; */
 }
@@ -263,6 +263,14 @@
     {
         font-weight: bold;
         font-size: 0.7em;
+        /* background-color: red; */
+    }
+
+    .main__listItem 
+    {
+        font-size: 0.9em;
+        /* background-color: red; */
+        padding:  10px 2px;
     }
 }
 
