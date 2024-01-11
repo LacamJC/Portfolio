@@ -45,15 +45,17 @@ html
     padding: 5px;
     border: 1px solid black;
     position: fixed;
-    /* display: none; */
-    /* transform: translateX(-100px); */
+    bottom: 3%;
+    /* display: ;visibili */
+    visibility: hidden;
+    transform: translateX(-100px);
     transition: all 0.5s ease;
 }
 
 .visible
 {
-    display: block;
-    /* transform: translateX(40px); */
+    /* display: block; */
+    transform: translateX(100px);
 }
 
 
@@ -494,6 +496,11 @@ html
         /* background-color: red; */
         padding:  10px 2px;
     }
+
+    .col__info--text 
+    {
+        width: 100%;
+    }
 }
 
 
@@ -610,6 +617,7 @@ html
     font-weight: bold;
     font-size: 1em;
     height: auto;
+    
 
     animation: element 10s infinite;
 }
