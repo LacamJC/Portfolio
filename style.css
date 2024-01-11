@@ -4,6 +4,35 @@
     padding: 0px;
 }
 
+html
+{
+    scroll-behavior: smooth;
+}
+
+.arrow
+{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    margin-top: 30px;
+    margin-left: 30px;
+    border-radius: 50%;
+    padding: 5px;
+    border: 1px solid black;
+    position: fixed;
+    /* display: none; */
+    transform: translateX(-100px);
+    transition: all 0.5s ease;
+}
+
+.visible
+{
+    display: block;
+    transform: translateX(40px);
+}
+
+
+
 .apresentacao
 {
     /* background-color: rgba(0, 0, 255, 0.308); */
@@ -15,6 +44,11 @@
     flex-direction: column;
     background-color: white;
    
+}
+
+.apresentacao:hover .arrow
+{
+    display: none;
 }
 
 .main__title
@@ -146,6 +180,20 @@
 }
 
 
+/* Iniciacao do conteudo */
+.conteudo
+{
+    width: 100%;
+    /* background-color: red; */
+    height: 500px;
+}
+
+.projetos
+{
+    border: 1px solid black;
+}
+
+
 
 @media screen and (min-width:1401px)
 {
@@ -169,8 +217,10 @@
     {
         /* background-color: rgba(255, 0, 0, 0.13); */
         width: 100%;
+    }
 
-        
+    .main__listGroup{
+        position: sticky;
     }
 
     .main__sub 
@@ -196,6 +246,26 @@
         text-align: center;
         font-weight: bold;
 
+    }
+
+    .main__title--line-hidden
+    {
+        width: 50%;
+        margin: auto;
+        border: 1px solid black;
+        animation: lineEternal--hidden 5s infinite;
+    }
+
+    .main__title--line--hidden-1
+    {
+        width: 50%;
+        
+        
+        margin: auto;
+        margin-top: 20px;
+        border: 2px solid black;
+
+        animation: lineEternal--hidden--md 5s infinite;
     }
 
     .main__sublist--hidden 
@@ -232,6 +302,13 @@
 
 @media screen and (max-width:500px)
 {
+    .visible 
+    {
+        display: block;
+        transform: translateX(-20px) ;
+        position: fixed;
+        bottom: 30px;
+    }
     
     .apresentacao 
     {
@@ -312,6 +389,43 @@
       width: 100%;
       border: 2px solid transparent;
       /* height: 0px; */
+    }
+  }
+
+  @keyframes lineEternal--hidden{
+    0%{
+        width: 0px;
+        border: 2px solid transparent;
+    }
+
+    50%{
+        width: 50%;
+        border: 2px solid black;
+
+    }
+
+    100%{
+        width: 0px;
+        border: 2px solid transparent;
+    }
+  }
+
+  @keyframes lineEternal--hidden--md
+  {
+    0%{
+        width: 0px;
+        border: 2px solid transparent;
+    }
+
+    50%{
+        width: 25%;
+        border: 2px solid black;
+
+    }
+
+    100%{
+        width: 0px;
+        border: 2px solid transparent;
     }
   }
 /* @keyframes move{
