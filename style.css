@@ -4,6 +4,10 @@
     --fonte1 : 'Roboto Mono', cursive; /*TITULO*/
     --fonte2 : 'Roboto Slab', cursive; /*PARAGRAFOS*/
     --fonte3 : 'Roboto Slab', cursive; /*SUBTITULOS*/
+
+    --sombra--leve : 0px 0px 5px rgba(0, 0, 0, 0.349);
+    --sombra--texto : 0px 5px 10px rgba(0, 0, 0, 0.322);
+    --preto : #212529;
 }
 
 *
@@ -16,10 +20,11 @@ p
 {
     /* color: red; */
     font-family: var(--fonte2);
+    text-indent: 20px;
     
 }
 
-h4
+h4, h5
 {
     font-family: var(--fonte3);
 }
@@ -33,6 +38,7 @@ h2
 html
 {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 h1
@@ -73,7 +79,7 @@ h1
     margin-left: 30px;
     border-radius: 50%;
     padding: 5px;
-    border: 1px solid black;
+    border: 1px solid var(--preto);
     position: fixed;
     bottom: 3%;
     /* display: ;visibili */
@@ -87,7 +93,7 @@ h1
 .arrow:hover 
 {
     opacity: 1;
-    background-color: black;
+    background-color: var(--preto);
     color: white;
     /* border: 1px solid white; */
     
@@ -133,7 +139,7 @@ h1
 
 .main__title--line
 {
-    border: 2px solid black;
+    border: 2px solid var(--preto);
     width: 85%;
     position: relative;
     bottom: 30px;
@@ -173,7 +179,7 @@ h1
 .main__sublist--link
 {
     text-decoration: none;
-    color: black;
+    color: var(--preto);
     text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.342);
     margin: 0px 10px;
     letter-spacing: 5px;
@@ -251,13 +257,13 @@ h1
 
 .main__listItem:hover a
 {
-    color: black;
+    color: var(--preto);
 
 } 
 
 .main__listItem:hover .active 
 {
-    border: 1px solid black;
+    border: 1px solid var(--preto);
     width: 100%;
 }
 
@@ -272,7 +278,7 @@ h1
 
 .projetos
 {
-    border: 1px solid black;
+    /* border: 1px solid var(--preto); */
 }
 
 .projeto__npr
@@ -280,7 +286,7 @@ h1
     width: 100%;
     min-height: 300px;
     /* background-color: rgba(0, 128, 0, 0.151); */
-    /* border: 2px solid black; */
+    /* border: 2px solid var(--preto); */
 }
 
 
@@ -295,7 +301,7 @@ h1
 .ALL__main__sublist--link 
 {
     text-decoration: none;
-    color: black;
+    color: var(--preto);
     text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.342);
     margin: 0px 10px;
     letter-spacing: 5px;
@@ -362,7 +368,7 @@ h1
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    border: 1px solid var(--preto);
 }
 
 .corInfo
@@ -409,10 +415,71 @@ h1
 .sobreMim
 {
     /* background-color: red; */
-    width: 100%;
+    /* width: 100%; */
     min-height: 300px;
 }
 
+.tabelaConhecimentos
+{
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    justify-items: start;
+    /* border: 1px solid var(--preto); */
+    border-radius: 5px;
+    width: 60%; 
+    box-shadow: var(--sombra--leve);
+    margin: 30px auto;
+}
+
+.tabelaConhecimentos .tabelaH2 
+{
+    /* background-color: var(--preto); */
+    color: white;
+    font-weight: 300;
+    font-family: var(--fonte1);
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabelaH2 h2 
+{
+    margin: 0px;
+}
+.conhecimentos
+{
+    /* background-color: red; */
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-top: 1px solid var(--preto);
+
+
+}
+
+.conhecimentos .celulas
+{
+    background-color: var(--preto);
+    color: white;
+    border-radius: 0px 0px 5px 0px;
+    box-shadow: var(--sombra--leve);
+    /* font-weight: ; */
+    letter-spacing: 2px;
+    padding: 5px 10px;
+    margin: 10px;
+} 
+
+.my__picture
+{
+    width: 280px;
+    height: 280px;
+    margin: 20px auto;
+    background-color: rebeccapurple;
+}
 
 @media screen and (min-width:1401px)
 {
@@ -471,7 +538,7 @@ h1
     {
         width: 50%;
         margin: auto;
-        border: 1px solid black;
+        border: 1px solid var(--preto);
         animation: lineEternal--hidden 5s infinite;
     }
 
@@ -482,7 +549,7 @@ h1
         
         margin: auto;
         margin-top: 20px;
-        border: 2px solid black;
+        border: 2px solid var(--preto);
 
         animation: lineEternal--hidden--md 5s infinite;
     }
@@ -515,8 +582,15 @@ h1
     .main__title--line
     {
         display: none;
+        width: 40%;
 
     }
+
+    .tabelaConhecimentos
+    {
+        /* background-color: yellow; */
+    }
+
 }
 
 @media screen and (max-width:500px)
@@ -583,6 +657,11 @@ h1
         font-family: var(--fonte1);
     }
 
+    .main__listGroup
+    {
+        text-align: center;
+    }
+
     .main__listItem 
     {
         font-size: 0.9em;
@@ -593,6 +672,13 @@ h1
     .col__info--text 
     {
         width: 100%;
+    }
+
+    .tabelaConhecimentos
+    {
+        width: 100%;
+        margin: auto;
+        /* background-color: blue; */
     }
 }
 
@@ -608,7 +694,7 @@ h1
     {
         width: 90%;
 
-        border: 2px solid black;
+        border: 2px solid var(--preto);
 
     }
     100%
@@ -626,7 +712,7 @@ h1
     }
     50% {
       width: 50%;
-      border: 2px solid black;
+      border: 2px solid var(--preto);
       /* height: 10px; */
     }
 
@@ -645,7 +731,7 @@ h1
 
     50%{
         width: 50%;
-        border: 2px solid black;
+        border: 2px solid var(--preto);
 
     }
 
@@ -664,7 +750,7 @@ h1
 
     50%{
         width: 25%;
-        border: 2px solid black;
+        border: 2px solid var(--preto);
 
     }
 
@@ -704,7 +790,7 @@ h1
 /* FUNCIONA */
 .git 
 {
-    color: black;
+    color: var(--preto);
     text-decoration: none;
 }
 .git:hover  
@@ -714,7 +800,7 @@ h1
 
 .git:hover label 
 {
-    border: 1px solid black;
+    border: 1px solid var(--preto);
 
 }
 .elementProject
@@ -741,14 +827,14 @@ h1
 .elementProject:hover 
 {
     pointer-events: fill;
-    border: 2px solid  black;
+    border: 2px solid  var(--preto);
     background-color: white;
     /* animation: none; */
 }
 
 .elementProject:hover a 
 {
-    color: black;
+    color: var(--preto);
 }
 
 
