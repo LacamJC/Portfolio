@@ -107,13 +107,115 @@
     <div class="separacao bg-dark w-100" style="height: 300px;"></div>
     <main class="conteudo">
         <section class="projetos" id="Projetos">
-            <div class="main__listGroup">
-                <ul class="main__list">
-                    <li class="main__listItem"><a href="#">New NPR</a><div class="active"></div></li>
+            <div class="main__listGroup" style="display: flex; flex-direction: column;
+            justify-content: center; align-items: center;">
+                <h2 class="text-center ">Meus projetos</h2>
+                <ul class="main__list ">
+                    <li class="main__listItem"><a href="#newnpr">New NPR</a><div class="active"></div></li>
                     <li class="main__listItem"><a href="#">PMG</a><div class="active"></div></li>
                     <li class="main__listItem"><a href="#">Task List</a><div class="active"></div></li>
                     <li class="main__listItem"><a href="#">Cards</a><div class="active"></div></li>
                 </ul>
+            </div>
+
+            <div class="projeto__npr row w-100 mx-auto" style="margin-top: 300px;">
+
+                <h1 class="text-center pt-5" id="newnpr">New NPR</h1>
+
+                <div class="col-12 col-lg-6 dbg-danger col-info">
+                    <div class="col__info--text dbg-warning">
+                        <h3>Sobre</h3>
+                        <p>
+                            O projeto NPR (Natureza Prioridade Renovada) é uma <a href="https://pt.wikipedia.org/wiki/Aplica%C3%A7%C3%A3o_web" class="text__link">aplicação web</a> desenvolvida por um grupo de estudantes durante o meu curso técnico em 2023. Em certo ponto do curso, fui integrado ao grupo, e após isso, o desenvolvimento do projeto avançou além do esperado. Após o término do curso, continuei trabalhando nele e, após estudar sobre o <span class="italic" title="Framework para CSS">Bootstrap 5</span>, refiz completamente o projeto, visando um código mais limpo e fácil de entender. Renomeei-o como New NPR.
+                        </p>
+                        <h4>O que é</h4>
+                        <p>
+                            Sendo uma aplicação web que une a tecnologia e a reciclagem, criando uma plataforma que se propõe a mostrar pontos de coleta oficiais em determinados locais, exibindo endereço e tipo de coleta do local. A aplicação possui um sistema de cadastro para o usuário, proporcionando a oportunidade de criar novos pontos de coleta. O usuário envia um formulário com os dados necessários, e assim, o administrador pode adicioná-lo ao mapa como oficial.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 bg-wasrning p-0" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+                    
+                    <h4 class="text-center">paleta de cores</h4>
+                    <div class="paleta">
+                        <div class="cor" style="background-color: #5cb85c;"  ><div class="corInfo" onclick="copyHEX('#5cb85c')">#5cb85c</div></div>
+                        <div class="cor" style="background-color: #228B22;"  ><div class="corInfo" onclick="copyHEX('#228B22')">#228B22</div></div>
+                        <div class="cor" style="background-color: #006400;"  ><div class="corInfo" onclick="copyHEX('#006400')">#006400</div></div>
+                        <div class="cor" style="background-color: #deffde;"  ><div class="corInfo" onclick="copyHEX('#deffde')">#deffde</div></div>
+                        <div class="cor" style="background-color: #808000;"  ><div class="corInfo" onclick="copyHEX('#808000')">#808000</div></div>
+             
+                    </div>  
+                    <div class="form-text w-50 m-auto"><p>Clique na cor desejada para copiar o codigo HEX</p></div>    
+                </div>
+                <div class="col-12 bg-prismary p-0 mt-2" style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap;">
+                 
+                        <div class=" bg-succsess col__divid" >
+                            <h5>Funcionalidades</h5>
+                            <ul class="ALL__main__sublist">
+                                
+                                <a href="https://pt.wikipedia.org/wiki/CRUD" target="_blank" class="ALL__main__sublist--link">
+                                    <li>CRUD de usuario</li>
+                                </a>
+                                <a href="https://support.google.com/mymaps/answer/3024454?hl=en&amp%3Bref_topic=3188329" target="_blank" class="ALL__main__sublist--link">
+                                    <li>Mapa interativo</li>
+                                </a>
+                                <a href="https://aws.amazon.com/pt/what-is/api/hhttps://support.google.com/mymaps/answer/3024454?hl=en&amp%3Bref_topic=3188329ttps://support.google.com/mymaps/answer/3024454?hl=en&amp%3Bref_topic=3188329" target="_blank" class="ALL__main__sublist--link">
+                                    <li>Consulta de CEP via api</li>
+                                </a>
+                                <a href="https://pt.wikipedia.org/wiki/Web_design_responsivo" target="_blank" class="ALL__main__sublist--link">
+                                    <li>Responsividade</li>
+                                </a>
+                                <a href="https://developer.mozilla.org/en-US/docs/Glossary/SQL" target="_blank" class="ALL__main__sublist--link">
+                                    <li>Banco de dados MYSQL</li>
+                                </a>
+                            </ul>
+                            
+                        </div>
+
+                  
+                        <div class=" bg-warnin  col__divid">
+                            <h5>Tecnologias usadas</h5>
+                            <ul  class="ALL__main__sublist">
+                                
+                                <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank" class="ALL__main__sublist--link">
+                                    <li>HTML5</li>
+                                </a>
+                                <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank" class="ALL__main__sublist--link">
+                                    <li>CSS3</li>
+                                </a>
+                                <a href="https://getbootstrap.com.br/" target="_blank" class="ALL__main__sublist--link">
+                                    <li>Bootstrap5</li>
+                                </a>
+                                <a href="https://developer.mozilla.org/pt-BR/docs/Learn/Server-side/Express_Nodejs" target="_blank" class="ALL__main__sublist--link">
+                                    <li>Express</li>
+                                </a>
+                                <a href="https://tecnoblog.net/responde/o-que-e-node-js-guia-para-iniciantes/" target="_blank" class="ALL__main__sublist--link">
+                                    <li>NodeJS</li>
+                                </a>
+                                <a href="https://developer.mozilla.org/en-US/docs/Glossary/SQL" target="_blank" class="ALL__main__sublist--link">
+                                    <li>MySQL</li>
+                                </a>
+                                <a href="https://axios-http.com/ptbr/docs/intro" target="_blank" class="ALL__main__sublist--link">
+                                    <li>AXIOS</li>
+                                </a>
+                                <a href="https://www.treinaweb.com.br/blog/utilizando-template-engine-ejs-com-node-js" target="_blank" class="ALL__main__sublist--link">
+                                    <li>EJS</li>
+                                </a>
+                            </ul>
+                            
+                        </div>
+                </div>
+                <!-- <div class="col-12 col-lg-6 bg-success">
+                    <h4>Onde Acessar ?</h4>
+                    <ul>
+                        <a href="https://github.com/LacamJC/NewNPR">
+                            <li>Github</li>
+                        </a>
+                        <a href="newnpr-production.up.railway.app">
+                            <li>newnpr-production.up.railway.app</li>
+                        </a>
+                    </ul>
+                </div> -->
             </div>
         </section>
     </main>
@@ -132,6 +234,13 @@
             } else {
                 elemento.classList.remove('visible')
             }
+        }
+
+        function copyHEX(x){
+            console.log(`Copiando cor : ${x}`)
+            navigator.clipboard.writeText(x)
+
+
         }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

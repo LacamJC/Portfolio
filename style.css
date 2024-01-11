@@ -9,6 +9,29 @@ html
     scroll-behavior: smooth;
 }
 
+.italic
+{
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+.text__link
+{
+    color: rgb(0, 0, 189);
+    text-decoration: none;
+}
+
+.text__link:hover 
+{
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
 .arrow
 {
     width: 50px;
@@ -97,6 +120,8 @@ html
 }
 
 
+
+
 .main__sublist--link
 {
     text-decoration: none;
@@ -107,10 +132,14 @@ html
     transition: text-shadow 0.5s ease;
 }
 
-.main__sublist--link:hover
+
+
+.main__sublist--link:hover, .ALL__main__sublist--link:hover 
 {
     text-shadow: 0px 0px 0px rgba(0,0,0,1.15);
 }
+
+
 
 .main__listGroup
 {
@@ -185,7 +214,7 @@ html
 {
     width: 100%;
     /* background-color: red; */
-    height: 500px;
+    /* height: 500px; */
 }
 
 .projetos
@@ -193,7 +222,127 @@ html
     border: 1px solid black;
 }
 
+.projeto__npr
+{
+    width: 100%;
+    min-height: 300px;
+    /* background-color: rgba(0, 128, 0, 0.151); */
+    /* border: 2px solid black; */
+}
 
+.col__divid
+{
+    width: 50%;
+    height: 100%;
+
+    padding-top: 10px;
+}
+
+.col__divid h5 
+{
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.ALL__main__sublist--link 
+{
+    text-decoration: none;
+    color: black;
+    text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.342);
+    margin: 0px 10px;
+    letter-spacing: 5px;
+    /* background-color: yellow; */
+    padding: 5px 10px;
+    margin: 10px 15px;
+    transition: text-shadow 0.5s ease;
+}
+
+.ALL__main__sublist
+{
+    color: rgb(61, 61, 61);
+    list-style: none;
+    /* background-color: rgba(255, 0, 0, 0.247); */
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-info
+{
+    letter-spacing: 1px;
+    /* background-color: red; */
+    
+    padding-left: 30px;
+
+}
+
+.col-info p 
+{
+    text-indent: 20px;
+}
+
+.col__info--text
+{
+    width: 80%;
+    margin: auto;
+}
+
+.logos
+{
+    /* background-color: red; */
+    width: 100%;
+    /* position: relative; */
+    /* bottom: 0px; */
+}
+
+.logos img 
+{
+    /* width: 50%; */
+}
+.paleta
+{
+    /* background-color: red; */
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cor 
+{
+    width: 100px;
+    height: 100px;
+    margin: 10px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.corInfo
+{
+    /* background-color: blue; */
+    width: 100%;
+    /* display: none; */
+    visibility: hidden;
+    height: 100%;
+    display: flex;
+    color: transparent;
+    justify-content: center;
+    align-items: center;
+    content: "";
+    transition: all 0.5s ease;
+}
+
+.cor:hover  .corInfo
+{
+    visibility: initial;
+    background-color: rgba(0, 0, 0, 0.13);
+    color: white;
+    cursor: default;
+}
 
 @media screen and (min-width:1401px)
 {
