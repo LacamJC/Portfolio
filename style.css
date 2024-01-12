@@ -34,9 +34,9 @@ p
 .nav 
 {
     /* background-color: blue; */
-    position: fixed;
-    top: 0;
-    z-index: 1000;
+    /* position: fixed; */
+    /* top: 0; */
+    /* z-index: 1000; */
     width: 100%;
     /* border: 1px solid transparent; */
     
@@ -51,17 +51,30 @@ p
     transition: all 0.5s ease;
 }
 
-.nav:hover 
+.nav .main__listItem 
 {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.185), transparent);
-    /* border: 1px solid black; */
-    transition: all 0.5s ease;
+
+    /* transition: all 2s ease; */
+    animation: skew 2s ease infinite;
+}
+
+.nav .main__listItem:hover 
+{
+    transform: scale(1.2);
+}
+
+
+.nav .main__listItem a 
+{
+    font-size: 2em;
+
 }
 
 .nav .main__listItem:hover a
 {
     color: black;
     transform: scale(1.2);
+    
 }
 h4, h5, h6
 {
@@ -576,6 +589,26 @@ h1
     text-indent: 0px;
 }
 
+.card-title
+{
+    text-shadow: 0px 0px 0px rgba(0,0,0,1.15);
+    /* font-weight: 300; */
+    /* transform: scale(1.2); */
+    transition: all 0.5s ease;
+}
+
+.card__projetos:hover .card-title 
+{
+    /* transform: scale(1.1); */
+    letter-spacing: 10px;
+}
+
+.card__projetos:hover 
+{
+    box-shadow: var(--sombra--leve);
+    transition: box-shadow 0.5s ease;
+}
+
 .card__keywords p
 {
     /* background-color: var(--preto); */
@@ -1028,5 +1061,21 @@ h1
     {
         transform: translate(+200px) translateY(10px) scale(1);
         transition: all 10s linear;
+    }
+}
+
+@keyframes skew{
+    0%
+    {
+        transform: translateX(10px) ;
+    }
+
+    50%
+    {
+        transform: translateX(-20px) ;
+    }
+
+    100%{
+        transform:translateX(10px) ;
     }
 }
