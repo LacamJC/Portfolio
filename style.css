@@ -559,7 +559,7 @@ h1
     font-size: 0.8em;
 }
 
-.btn-card 
+.btn
 {
     /* background-color: red; */
     border: 1px solid var(--preto);
@@ -570,7 +570,7 @@ h1
 
 }
 
-.btn-card:hover 
+.btn:hover 
 {
     background-color: var(--preto);
     color: white;
@@ -593,6 +593,13 @@ h1
     transition: all 0.5s ease;
 }
 
+.modal-title
+{
+    /* color: red; */
+    font-size: 1.5em !important;
+    font-weight: bold;
+    text-align: center;
+}
 .card__projetos:hover .card-title 
 {
     /* transform: scale(1.1); */
