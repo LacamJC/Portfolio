@@ -7,6 +7,7 @@
 
     --sombra--lite: 0px 0px 5px rgba(0, 0, 0, 0.249);
     --sombra--leve : 0px 0px 5px rgba(0, 0, 0, 0.349);
+    --sombra--texto--leve: 0px 5px 10px rgba(0, 0, 0, 0.116);;
     --sombra--texto : 0px 5px 10px rgba(0, 0, 0, 0.322);
     --preto : #212529;
 }
@@ -23,6 +24,11 @@ p
     font-family: var(--fonte2);
     text-indent: 20px;
     
+}
+
+.text-shadow
+{
+    text-shadow: var(--sombra--texto--leve);
 }
 
 .nav 
@@ -165,7 +171,8 @@ h1
 {
     font-size: 6em;
     z-index: 2;
-    text-shadow: -6px 2px 5px rgba(0,0,0,0.14);
+    /* text-shadow: -6px 2px 5px rgba(0,0,0,0.14); */
+    text-shadow: var(--sombra--texto);
 
     position: relative;
 }
