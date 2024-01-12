@@ -24,6 +24,38 @@ p
     
 }
 
+.nav 
+{
+    /* background-color: blue; */
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    /* border: 1px solid transparent; */
+
+    transition: all 0.5s ease;
+}
+
+.nav__shadow 
+{
+    /* background-color: black; */
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.075), transparent);
+
+    transition: all 0.5s ease;
+}
+
+.nav:hover 
+{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.185), transparent);
+    /* border: 1px solid black; */
+    transition: all 0.5s ease;
+}
+
+.nav .main__listItem:hover a
+{
+    color: black;
+    transform: scale(1.2);
+}
 h4, h5
 {
     font-family: var(--fonte3);
@@ -112,12 +144,12 @@ h1
 .apresentacao
 {
     /* background-color: rgba(0, 0, 255, 0.308); */
-    height: 600px;
+    /* height: 600px; */
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* flex-direction: column; */
     background-color: white;
    
 }
@@ -130,7 +162,7 @@ h1
 
 .main__title
 {
-    font-size: 8em;
+    font-size: 6em;
     z-index: 2;
     text-shadow: -6px 2px 5px rgba(0,0,0,0.14);
 
@@ -142,7 +174,7 @@ h1
     border: 2px solid var(--preto);
     width: 85%;
     position: relative;
-    bottom: 30px;
+    bottom: 20px;
     z-index: 2;
     animation: lineEternal 6s ease-in-out infinite;
 }
@@ -186,6 +218,8 @@ h1
     font-family: var(--fonte1);
     font-weight: 200;
     transition: text-shadow 0.5s ease;
+
+    transition: all 0.5s ease;
 }
 
 
@@ -193,7 +227,9 @@ h1
 .main__sublist--link:hover, .ALL__main__sublist--link:hover 
 {
     text-shadow: 0px 0px 0px rgba(0,0,0,1.15);
-    font-weight: 300;
+    /* font-weight: 300; */
+    transform: scale(1.2);
+    transition: all 0.5s ease;
 }
 
 
@@ -276,10 +312,7 @@ h1
     /* height: 500px; */
 }
 
-.projetos
-{
-    /* border: 1px solid var(--preto); */
-}
+
 
 .projeto__npr
 {
@@ -586,10 +619,6 @@ h1
 
     }
 
-    .tabelaConhecimentos
-    {
-        /* background-color: yellow; */
-    }
 
 }
 
@@ -629,6 +658,7 @@ h1
     {
         /* background-color: red; */
         width: 100%;
+        text-align: center;
         flex-direction: column-reverse;
 
     }
@@ -655,6 +685,8 @@ h1
         /* background-color: red; */
         text-wrap: wrap;
         font-family: var(--fonte1);
+
+        transition: all 0.5s ease;
     }
 
     .main__listGroup
@@ -679,6 +711,18 @@ h1
         width: 100%;
         margin: auto;
         /* background-color: blue; */
+    }
+
+    .sobreMIm 
+    {
+        /* background-color: red; */
+        width: 100%;
+    }
+
+    .sobreMIm p
+    {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
@@ -759,35 +803,7 @@ h1
         border: 2px solid transparent;
     }
   }
-/* @keyframes move{
-    0%
-    {
-        left: 10px;
-        transform: translateX(10px);
-        transform: translateX(10px);
-        width: 200px;
-        width: 200px;
-    }
 
-    50%
-    {
-
-        transform: translateX(100px);
-        width: 300px;
-        height: 300px;
-        transform: translateX(200px);
-    }
-
-    100%
-    {
-        width: 200px;
-        height: 200px;
-        transform: translateX(10px);
-        transform: translateX(10px);
-    }
-} */
-
-/* FUNCIONA */
 .git 
 {
     color: var(--preto);
