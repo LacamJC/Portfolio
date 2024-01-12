@@ -32,7 +32,7 @@ p
     z-index: 1000;
     width: 100%;
     /* border: 1px solid transparent; */
-
+    
     transition: all 0.5s ease;
 }
 
@@ -876,6 +876,13 @@ h1
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+}
+
+
+.link__head
+{
+    color: black  !important; 
+   
 }
 
 @keyframes element{
