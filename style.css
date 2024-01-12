@@ -526,6 +526,7 @@ h1
 {
     /* background-color: red; */
     border-radius: 0px;
+    margin: 5px 5px;
     padding: 0px;
     border: 1px solid var(--preto);
 }
@@ -568,6 +569,11 @@ h1
     box-shadow: var(--sombra--lite);
 
     transform: translateX(2px) translateY(2px);
+}
+
+.card-text
+{
+    text-indent: 0px;
 }
 
 .card__keywords p

@@ -699,9 +699,23 @@
                   <p class="card-text">Uma lista de tarefas simples e estática. <br><br></p>
                   <a href="#" class="btn btn-card" data-bs-toggle="modal" data-bs-target="#modalTaskList">Mais sobre + </a>
                 </div>
+
+                <div class="card__keywords">
+                    <h6 class="text-center">Palavras chaves</h6>
+                    <p>Útil - Dia-dia - Simples</p>
+                </div>
+            </div>
+
+            <div class="card col-12 col-lg-3 mt-3 card__projetos">
+                
+                <div class="card-body">
+                  <h5 class="card-title">Cards</h5>
+                  <p class="card-text">Inumeros cards personalizados de redes sociais, plataformas e conteúdos na Internet </p>
+                  <input type="button" value="Mais sobre +" class="btn btn-card" data-bs-toggle="modal" data-bs-target="#modalCards">
+                </div>
                 <div class="card__keywords">
                 <h6 class="text-center">Palavras chaves</h6>
-                <p>Útil - Dia-dia - Simples</p>
+                <p>Curiosidade - Social - Simples</p>
             </div>
             </div>
             
@@ -709,6 +723,12 @@
     </main>
 
     <!-- MODAL -->
+    <!--  -->
+    <!--  -->
+        <!--  -->
+    <!--  -->
+        <!--  -->
+    <!--  -->
     <!-- Modal NPR-->
 <div class="modal fade" id="modalNpr" tabindex="-1" aria-labelledby="modalNpr" aria-hidden="true">
         <div class="modal-dialog modal-xl">
@@ -833,6 +853,7 @@
                             
                                     </div>
                                 </div>
+
                         </div>
                         
 
@@ -981,25 +1002,253 @@
     
          <!-- Modal Task List-->
 <div class="modal fade" id="modalTaskList" tabindex="-1" aria-labelledby="modalTaskList" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel" >Task List</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body bg-waning">
+                <div class="col__info--text bg-wadrning row">
+                    <div class="mb-3 col-12 col-md-6 warning">
+                        <h4>Sobre</h4>
+                        <p>
+                            Um projeto útil, fiz quando estava testando funções de criação de objeto e EventListener. Uma lista de tarefas com função de criação e conclusão simples de entender e fácil de usar.
+                        </p>
+                    </div>
+    
+                    <div class="mb-3 col-12 col-md-6">
+                            <h4>O que é</h4>
+                            <p>
+                                Em sua essência, eram apenas alguns testes em JavaScript, mas com o passar do tempo, acabei desenvolvendo um projeto interessante e educativo. A proposta inicial de experimentação com código evoluiu para a modelagem de uma iniciativa que não só desperta interesse, mas também se revela educativa. Este projeto visa oferecer uma abordagem prática e envolvente, utilizando a linguagem de programação JavaScript como base, proporcionando uma experiência tanto educacional quanto desafiadora.
+                            </p> 
+                    </div>
+                </div>
+                <h4 class="text-center">paleta de cores</h4>
+                <div class="paleta">
+                    <div class="cor" style="background-color: #ffffff;"  ><div class="corInfo" onclick="copyHEX('#ffffff')">#ffffff</div></div>
+                    <div class="cor" style="background-color: #000000;"  ><div class="corInfo" onclick="copyHEX('#000000')">#f5f5f5</div></div>
+
+                </div>   
+                <div class="form-text w-50 m-auto text-center"><p>Clique na cor desejada para copiar o codigo HEX</p>
+                    <p>Este projeto em especifico não possui uma paleta de cores definida</p></div>  </div> 
+                
+
+                <div class="row m-auto w-100">
+                    <!-- Funcionalidades -->
+                    <div class=" bg-sudccess  col-12 col-lg-6 pt-5">
+                        <div class="col__info--text">
+                            <h5 class="text-center">Funcionalidades</h5>
+                            <ul class="ALL__main__sublist">
+                                <a href="#" class="ALL__main__sublist--link">
+                                    <li>Criação de tarefas</li>
+                                </a>
+
+                                <a href="#" class="ALL__main__sublist--link">
+                                    <li>Excluir tarefas Completas</li>
+                                </a>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <!-- Tecnologias -->
+                    <div class=" bg-warnin   col-12 col-lg-6 bg-ddanger pt-5">
+                        <h5 class="text-center">Tecnologias usadas</h5>
+                        <ul  class="ALL__main__sublist">
+                    
+                            <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank" class="ALL__main__sublist--link">
+                                <li>HTML5</li>
+                            </a>
+                            <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank" class="ALL__main__sublist--link">
+                                <li>CSS3</li>
+                            </a>
+                        </ul>
+                    
+                    </div>
+                    <!--  -->
+
+                    <!-- Aside -->
+
+                    <aside class=" bg-wadrning px-5">
+                        <div class="w-75 m-auto text-center">
+                            
+                            <h2>Avisos</h2>
+                            <p>O projeto está hospedado no Github Pages fique a vontade para ver.</p>
+                        </div>
+
+                        <h5 class="text-center mb-3">Outros</h5>
+
+            
+
+                        <div class="mb-3" style="width: 100%; display: flex; justify-content: space-evenly; align-items: center; flex-direction: row; flex-wrap: wrap;">
+                            <div class="card my-5" style="width: 220px; height: 250px;">
+                                <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" width="100px" class="" alt="..." class="text-center">
+                                <div class="card-body bgd-danger">
+                                    <p class="card-text">Repositorio no github código atual</p>
+                                    <a href="https://github.com/LacamJC/Lista-de-Tarefas" target="_blank" class="btn btn-primary m-auto">Ir para Github</a>
+                                </div>
+                            </div>
+                            
+                            <div class="card my-5" style="width: 200px; height: 250px;">
+                                <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--ux15-5qy--/c_imagga_scale,f_auto,fl_progressive,h_1080,q_auto,w_1080/https://dev-to-uploads.s3.amazonaws.com/i/a12tj8n6facp0kt0xb0n.jpeg" width="110px" class="" alt="..." class="text-center">
+                                <div class="card-body bgd-danger">
+                                <p class="card-text">Github Pages</p>
+                                <a href="https://lacamjc.github.io/Lista-de-Tarefas/" target="_blank" class="btn btn-primary m-auto">Ir para Github Pages</a>
+                        
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                    </aside>
+
+                    <!--  -->
+                </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Voltar</button>
+            </div>
+        </div>
+        </div>
+    </div> 
+</div>
+
+<!-- Cards MODAL -->
+
+<div class="modal fade" id="modalTaskList" tabindex="-1" aria-labelledby="modalTaskList" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel" >Task List</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body bg-waning">
+                <div class="col__info--text bg-wadrning row">
+                    <div class="mb-3 col-12 col-md-6 warning">
+                        <h4>Sobre</h4>
+                        <p>
+                            Um projeto útil, fiz quando estava testando funções de criação de objeto e EventListener. Uma lista de tarefas com função de criação e conclusão simples de entender e fácil de usar.
+                        </p>
+                    </div>
+    
+                    <div class="mb-3 col-12 col-md-6">
+                            <h4>O que é</h4>
+                            <p>
+                                Em sua essência, eram apenas alguns testes em JavaScript, mas com o passar do tempo, acabei desenvolvendo um projeto interessante e educativo. A proposta inicial de experimentação com código evoluiu para a modelagem de uma iniciativa que não só desperta interesse, mas também se revela educativa. Este projeto visa oferecer uma abordagem prática e envolvente, utilizando a linguagem de programação JavaScript como base, proporcionando uma experiência tanto educacional quanto desafiadora.
+                            </p> 
+                    </div>
+                </div>
+                <h4 class="text-center">paleta de cores</h4>
+                <div class="paleta">
+                    <div class="cor" style="background-color: #ffffff;"  ><div class="corInfo" onclick="copyHEX('#ffffff')">#ffffff</div></div>
+                    <div class="cor" style="background-color: #000000;"  ><div class="corInfo" onclick="copyHEX('#000000')">#f5f5f5</div></div>
+
+                </div>   
+                <div class="form-text w-50 m-auto text-center"><p>Clique na cor desejada para copiar o codigo HEX</p>
+                    <p>Este projeto em especifico não possui uma paleta de cores definida</p></div>  </div> 
+                
+
+                <div class="row m-auto w-100">
+                    <!-- Funcionalidades -->
+                    <div class=" bg-sudccess  col-12 col-lg-6 pt-5">
+                        <div class="col__info--text">
+                            <h5 class="text-center">Funcionalidades</h5>
+                            <ul class="ALL__main__sublist">
+                                <a href="#" class="ALL__main__sublist--link">
+                                    <li>Criação de tarefas</li>
+                                </a>
+
+                                <a href="#" class="ALL__main__sublist--link">
+                                    <li>Excluir tarefas Completas</li>
+                                </a>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <!-- Tecnologias -->
+                    <div class=" bg-warnin   col-12 col-lg-6 bg-ddanger pt-5">
+                        <h5 class="text-center">Tecnologias usadas</h5>
+                        <ul  class="ALL__main__sublist">
+                    
+                            <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank" class="ALL__main__sublist--link">
+                                <li>HTML5</li>
+                            </a>
+                            <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank" class="ALL__main__sublist--link">
+                                <li>CSS3</li>
+                            </a>
+                        </ul>
+                    
+                    </div>
+                    <!--  -->
+
+                    <!-- Aside -->
+
+                    <aside class=" bg-wadrning px-5">
+                        <div class="w-75 m-auto text-center">
+                            
+                            <h2>Avisos</h2>
+                            <p>O projeto está hospedado no Github Pages fique a vontade para ver.</p>
+                        </div>
+
+                        <h5 class="text-center mb-3">Outros</h5>
+
+            
+
+                        <div class="mb-3" style="width: 100%; display: flex; justify-content: space-evenly; align-items: center; flex-direction: row; flex-wrap: wrap;">
+                            <div class="card my-5" style="width: 220px; height: 250px;">
+                                <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" width="100px" class="" alt="..." class="text-center">
+                                <div class="card-body bgd-danger">
+                                    <p class="card-text">Repositorio no github código atual</p>
+                                    <a href="https://github.com/LacamJC/Lista-de-Tarefas" target="_blank" class="btn btn-primary m-auto">Ir para Github</a>
+                                </div>
+                            </div>
+                            
+                            <div class="card my-5" style="width: 200px; height: 250px;">
+                                <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--ux15-5qy--/c_imagga_scale,f_auto,fl_progressive,h_1080,q_auto,w_1080/https://dev-to-uploads.s3.amazonaws.com/i/a12tj8n6facp0kt0xb0n.jpeg" width="110px" class="" alt="..." class="text-center">
+                                <div class="card-body bgd-danger">
+                                <p class="card-text">Github Pages</p>
+                                <a href="https://lacamjc.github.io/Lista-de-Tarefas/" target="_blank" class="btn btn-primary m-auto">Ir para Github Pages</a>
+                        
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                    </aside>
+
+                    <!--  -->
+                </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Voltar</button>
+            </div>
+        </div>
+        </div>
+    </div> 
+</div>
+
+
+<!-- MODAL CARD START -->
+<div class="modal fade" id="modalCards" tabindex="-1" aria-labelledby="modalCards" aria-hidden="true">
     <div class="modal-dialog modal-xl">
-      <div class="modal-content">
+    <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel" >Task List</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <h1 class="modal-title fs-5" id="exampleModalLabel" >Cards</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body bg-waning">
             <div class="col__info--text bg-wadrning row">
                 <div class="mb-3 col-12 col-md-6 warning">
                     <h4>Sobre</h4>
                     <p>
-                        Um projeto útil, fiz quando estava testando funções de criação de objeto e EventListener. Uma lista de tarefas com função de criação e conclusão simples de entender e fácil de usar.
+                        Este é um projeto simples, um dos meus primeiros. Basicamente, ele consiste na apresentação de alguns cards contendo breves descrições de uma plataforma online, cada uma acompanhada pela logo vetorizada por mim. Utilizei o <a href="https://www.adobe.com/br/products/illustrator/campaign/pricing.html?gclid=Cj0KCQiAwP6sBhDAARIsAPfK_waS-TbFdW_wUsxRtCIBZ-9EzREknzCSqVvBPatKJEfSksUXjaaT_XMaAtsLEALw_wcB&sdid=KQPNY&mv=search&ef_id=Cj0KCQiAwP6sBhDAARIsAPfK_waS-TbFdW_wUsxRtCIBZ-9EzREknzCSqVvBPatKJEfSksUXjaaT_XMaAtsLEALw_wcB:G:s&s_kwcid=AL!3085!3!470955336924!e!!g!!adobe%20illustrator!188190582!110348310163&gad_source=1" class="text__link">Adobe Illustrator</a> para criar as representações vetoriais, 
                     </p>
                 </div>
- 
+
                 <div class="mb-3 col-12 col-md-6">
-                         <h4>O que é</h4>
+                        <h4>Curiosidade</h4>
                         <p>
-                            Em sua essência, eram apenas alguns testes em JavaScript, mas com o passar do tempo, acabei desenvolvendo um projeto interessante e educativo. A proposta inicial de experimentação com código evoluiu para a modelagem de uma iniciativa que não só desperta interesse, mas também se revela educativa. Este projeto visa oferecer uma abordagem prática e envolvente, utilizando a linguagem de programação JavaScript como base, proporcionando uma experiência tanto educacional quanto desafiadora.
+                            Foi um dos primeiros projetos que eu comecei a 4 anos atrás, nunca mexi muito depois de finalizar ele, mas sei que se refizesse ele hoje em dia ficaria bem melhor !
                         </p> 
                 </div>
             </div>
@@ -1008,9 +1257,12 @@
                 <div class="cor" style="background-color: #ffffff;"  ><div class="corInfo" onclick="copyHEX('#ffffff')">#ffffff</div></div>
                 <div class="cor" style="background-color: #000000;"  ><div class="corInfo" onclick="copyHEX('#000000')">#f5f5f5</div></div>
 
+
             </div>   
-            <div class="form-text w-50 m-auto text-center"><p>Clique na cor desejada para copiar o codigo HEX</p>
-                <p>Este projeto em especifico não possui uma paleta de cores definida</p></div>  </div> 
+            <div class="form-text w-50 m-auto text-center">
+                <p>Clique na cor desejada para copiar o codigo HEX</p>
+                <p>Este em especifico não possui uma paleta de cores definida, ele se utiliza das cores das plataformas em cada card</p>
+            </div>  </div> 
             
 
             <div class="row m-auto w-100">
@@ -1020,11 +1272,7 @@
                         <h5 class="text-center">Funcionalidades</h5>
                         <ul class="ALL__main__sublist">
                             <a href="#" class="ALL__main__sublist--link">
-                                <li>Criação de tarefas</li>
-                            </a>
-
-                            <a href="#" class="ALL__main__sublist--link">
-                                <li>Excluir tarefas Completas</li>
+                                <li>Cards Interativos</li>
                             </a>
 
                         </ul>
@@ -1058,46 +1306,47 @@
 
                     <h5 class="text-center mb-3">Outros</h5>
 
-          
+        
 
-                      <div class="mb-3" style="width: 100%; display: flex; justify-content: space-evenly; align-items: center; flex-direction: row; flex-wrap: wrap;">
+                    <div class="mb-3" style="width: 100%; display: flex; justify-content: space-evenly; align-items: center; flex-direction: row; flex-wrap: wrap;">
                         <div class="card my-5" style="width: 220px; height: 250px;">
                             <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" width="100px" class="" alt="..." class="text-center">
                             <div class="card-body bgd-danger">
                                 <p class="card-text">Repositorio no github código atual</p>
-                                <a href="https://github.com/LacamJC/Lista-de-Tarefas" target="_blank" class="btn btn-primary m-auto">Ir para Github</a>
+                                <a href="https://github.com/LacamJC/Cards" target="_blank" class="btn btn-primary m-auto">Ir para Github</a>
                             </div>
                         </div>
+                        
                         
                         <div class="card my-5" style="width: 200px; height: 250px;">
                             <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--ux15-5qy--/c_imagga_scale,f_auto,fl_progressive,h_1080,q_auto,w_1080/https://dev-to-uploads.s3.amazonaws.com/i/a12tj8n6facp0kt0xb0n.jpeg" width="110px" class="" alt="..." class="text-center">
                             <div class="card-body bgd-danger">
                               <p class="card-text">Github Pages</p>
-                              <a href="https://lacamjc.github.io/Lista-de-Tarefas/" target="_blank" class="btn btn-primary m-auto">Ir para Github Pages</a>
+                              <a href="https://lacamjc.github.io/Cards/" target="_blank" class="btn btn-primary m-auto">Ir para Github Pages</a>
                       
                             </div>
                         </div>
-                      </div>
-                      
+                    </div>
+                    
 
                 </aside>
 
                 <!--  -->
             </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Voltar</button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Voltar</button>
         </div>
-      </div>
     </div>
-    </div> 
-  </div>
-
+    </div>
+</div> 
+</div>
+<!-- MODAL CARD END -->
 
 <!-- FUNCIONA -->
 
 
 
-    <script src="js/copyHEX.js"></script>t
+    <script src="js/copyHEX.js"></script>
     <script src="js/onscroll.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
