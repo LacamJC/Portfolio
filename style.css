@@ -5,6 +5,10 @@
     --fonte2 : 'Roboto Slab', cursive; /*PARAGRAFOS*/
     --fonte3 : 'Roboto Slab', cursive; /*SUBTITULOS*/
 
+    /* --fonte__size__titulo:; */
+    --fonte__size__subtitulo: 2.5em;
+    --fonte__size__text: 1.1em;
+
     --sombra--lite: 0px 0px 5px rgba(0, 0, 0, 0.249);
     --sombra--leve : 0px 0px 5px rgba(0, 0, 0, 0.349);
     --sombra--texto--leve: 0px 5px 10px rgba(0, 0, 0, 0.116);;
@@ -24,6 +28,16 @@ p
     font-family: var(--fonte2);
     text-indent: 20px;
     
+}
+
+.size__texto
+{
+    font-size: var(--fonte__size__text);
+}
+
+.size__subtitulo
+{
+    font-size: var(--fonte__size__subtitulo);
 }
 
 .text-shadow
@@ -55,7 +69,7 @@ p
 {
 
     /* transition: all 2s ease; */
-    animation: skew 2s ease infinite;
+    animation: skew 2.5s ease infinite;
 }
 
 .nav .main__listItem:hover 
