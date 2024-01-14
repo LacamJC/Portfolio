@@ -5,7 +5,7 @@
     --fonte2 : 'Roboto Slab', cursive; /*PARAGRAFOS*/
     --fonte3 : 'Roboto Slab', cursive; /*SUBTITULOS*/
 
-    /* --fonte__size__titulo:; */
+    --fonte__size__titulo: 3em;
     --fonte__size__subtitulo: 2.5em;
     --fonte__size__text: 1.1em;
 
@@ -28,6 +28,11 @@ p
     font-family: var(--fonte2);
     text-indent: 20px;
     
+}
+
+.size__titulo 
+{
+    font-size: var(--fonte__size__titulo);
 }
 
 .size__texto
@@ -560,6 +565,9 @@ h1
     height: 280px;
     margin: 20px auto;
     background-color: rebeccapurple;
+    border-radius: 50%; 
+    overflow: hidden;
+    box-shadow: var(--sombra--lite);
 }
 
 .card__projetos
