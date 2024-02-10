@@ -9,12 +9,33 @@
     --fonte__size__subtitulo: 2.5em;
     --fonte__size__text: 1.1em;
 
+
+    font-size: 100%; /* 16 px */
+    --font-size-1: 2.25rem;   /* 48px */
+    --font-size-2: 1.5rem;    /* 32px */
+    --font-size-3: 1rem;
+    --font-size-4: 0.75rem;   /* 16px */
+
+
     --sombra--lite: 0px 0px 5px rgba(0, 0, 0, 0.249);
     --sombra--leve : 0px 0px 5px rgba(0, 0, 0, 0.349);
     --sombra--texto--leve: 0px 5px 10px rgba(0, 0, 0, 0.116);;
     --sombra--texto : 0px 5px 10px rgba(0, 0, 0, 0.322);
     --preto : #212529;
 }
+
+@media  (min-width: 768px)
+{
+    :root {
+        --font-size-1: 3rem;   /* 48px */
+        --font-size-2: 2rem;    /* 32px */
+        --font-size-3: 1rem;
+        --font-size-4: 1rem;   /* 16px */
+
+    }
+}
+
+
 
 *
 {
@@ -85,7 +106,8 @@ p
 
 .nav .main__listItem a 
 {
-    font-size: 2em;
+    font-size: var(--font-size-1);
+    /* background-color: red; */
 
 }
 
@@ -201,7 +223,8 @@ h1
 
 .main__title
 {
-    font-size: 6em;
+    font-size: 6rem;
+    /* background-color: red !important; */
     z-index: 2;
     /* text-shadow: -6px 2px 5px rgba(0,0,0,0.14); */
     text-shadow: var(--sombra--texto);
@@ -239,7 +262,8 @@ h1
 
 .main__sublist
 {
-    font-size: 1.2rem;
+    font-size: var(--font-size-3);
+    /* background-color: red; */
     color: rgb(61, 61, 61);
     text-align: center;
     /* text-shadow: 0px 15px 5px rgba(0,0,0,1.15); */
@@ -574,6 +598,7 @@ h1
 {
     /* background-color: red; */
     border-radius: 0px;
+    width: 350px;
     margin: 5px 5px;
     padding: 0px;
     border: 1px solid var(--preto);
@@ -591,7 +616,7 @@ h1
 
 .card__keywords h6 
 {
-    font-size: 0.8em;
+    font-size: var(--font-size-4);
 }
 
 .btn
@@ -631,7 +656,7 @@ h1
 .modal-title
 {
     /* color: red; */
-    font-size: 1.5em !important;
+    font-size: var(--font-size-2) !important;
     font-weight: bold;
     text-align: center;
 }
@@ -665,7 +690,7 @@ h1
     font-family: var(--fonte1);
     font-weight: 200;
     /* transition: text-shadow 0.5s ease; */
-    font-size: 0.7em;
+    font-size: var(--font-size-4);
 }
 
 /* Preview */
@@ -777,7 +802,7 @@ h1
     .main__sublist--link 
 
     {
-        font-size: 15px;
+        font-size: var(--font-size-3);
         /* background-color: red; */
         padding: 5px 10px;
         margin: 5px 15px;
@@ -846,7 +871,7 @@ h1
 
     .main__title--hidden
     {
-        font-size: 2.5em;
+        font-size: var(--font-size-1);
     }
 
     .main__sublist--hidden
@@ -861,7 +886,7 @@ h1
     .main__sublist--link 
     {
         font-weight: bold;
-        font-size: 0.7em;
+        font-size: var(--font-size-4);
         /* background-color: red; */
     }
     
@@ -876,7 +901,7 @@ h1
     .ALL__main__sublist--link
     {
         text-align: center;
-        font-size: 0.9em;
+        font-size: var(--font-size-3);
         /* background-color: red; */
         text-wrap: wrap;
         font-family: var(--fonte1);
@@ -891,7 +916,7 @@ h1
 
     .main__listItem 
     {
-        font-size: 0.9em;
+        font-size: var(--font-size-3);
         /* background-color: red; */
         padding:  10px 2px;
     }
